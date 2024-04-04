@@ -29,6 +29,7 @@ public class SquareController : MonoBehaviour
             countdownText.text = "Time: " + timeRemaining.ToString();
         }
         countdownText.text = "Time's up!";
+        SceneManager.LoadScene("GameoverScene");
     }
     // Update is called once per frame
     void Update()

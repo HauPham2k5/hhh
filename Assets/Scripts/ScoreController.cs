@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreController : MonoBehaviour
 {
     // Start is called before the first frame update
+    public Text scoreText;
     public static ScoreController instance;
     public static ScoreController Instance
     {
@@ -21,7 +23,7 @@ public class ScoreController : MonoBehaviour
     public void IncreaseScore(int value)
     {
         score += value;
-        Debug.Log("Score Increased! New Score:" +  score);
+       scoreText.text = "Score: " + score.ToString();
     }
    
 }

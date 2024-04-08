@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+[CreateAssetMenu(fileName = "New Player Data", menuName = "Data/Player Data")]
 
-
-public class InfoManager : MonoBehaviour
+public class PlayerData : ScriptableObject
 {
     // Start is called before the first frame update
-    public Text info;
-    string Name = "Hau Pham";
+    public int playerLevel;
+    public int playerScore;
     void Start()
     {
         
@@ -17,6 +16,6 @@ public class InfoManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        info.text = "Ten nguoi choi " + Name;
+        
     }
 }

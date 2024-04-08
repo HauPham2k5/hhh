@@ -28,9 +28,9 @@ public class GameManager : MonoBehaviour
         if (PlayerPrefs.HasKey("PlayerLevel"))
         {
             playerData.playerLevel = PlayerPrefs.GetInt("PlayerLevel");
-            playerData.playerLevel = PlayerPrefs.GetInt("PlayerScore");
+            playerData.playerScore = PlayerPrefs.GetInt("PlayerScore");
             Debug.Log("PlayerLevel" + playerData.playerLevel);
-            Debug.Log("PlayerLevel" + playerData.playerScore);
+            Debug.Log("PlayerScore" + playerData.playerScore);
         }
         else
         {

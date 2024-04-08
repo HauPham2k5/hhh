@@ -161,4 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8e8ba21a02059a4caa7ad671bb0d2b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: c84c12bf1d812dc46b3761f4783e3b57, type: 2}
   scorevalue: 10

@@ -13,6 +13,7 @@ public class SquareController : MonoBehaviour
     // Start is called before the first frame update
     public GameObject bulletPrefab;
     public float bulletSpeed = 10f;
+    public PlayerData playerData;
 
     private Vector2 shootDirection;
     void Start()
@@ -75,6 +76,10 @@ public class SquareController : MonoBehaviour
     }
     public void LoadNextScene()
     {
+        playerData.playerLevel++;
+        PlayerPrefs.SetInt("PlayerLevel", playerData.playerLevel);
+        PlayerPrefs.SetInt("PlayerScore", playerData.playerScore);
+
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }

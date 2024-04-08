@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimeManager : MonoBehaviour
 {
     // Start is called before the first frame update
-  
+    public PlayerData playerData;
     public Text timeText;
     // Thời gian chơi tổng cộng
     private float currentTime = 0;

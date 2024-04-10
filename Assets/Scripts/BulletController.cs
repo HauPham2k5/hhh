@@ -40,6 +40,14 @@ public class BulletController : MonoBehaviour
             Debug.Log("xx111");
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag.Equals("Trap"))
+        {
+            
+            ScoreController.Instance.IncreaseScore(scorevalue);
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
